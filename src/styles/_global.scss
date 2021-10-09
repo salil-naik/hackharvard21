@@ -1,0 +1,37 @@
+:root{
+    --sidebar-bg: #fff;
+    --nav-active: #EEF0F6;
+    --text-primary: #202531;
+    --text-secondary: #7C7D84;
+    --main-bg: #E1E6EF;
+}
+
+.dark-theme{
+    --sidebar-bg: #2C2D31;
+    --nav-active: #35373B;
+    --text-primary: #fff;
+    --text-secondary: #9C9BA0;
+    --main-bg: #242627;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{box-sizing: border-box;}
+
+.main{
+    margin-left: 220px;
+    overflow-y: auto;
+}
+
+.App{
+    background-color: var(--main-bg);
+    padding: 30px 25px;
+}

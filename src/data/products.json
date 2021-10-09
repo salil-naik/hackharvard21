@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "product 1",
+      "price": "100",
+      "discount": "10",
+      "image": "https://via.placeholder.com/300",
+      "category": "fasion"
+    },
+    {
+      "id": "2",
+      "name": "product 1",
+      "price": "100",
+      "discount": "10",
+      "image": "https://via.placeholder.com/300",
+      "category": "fasion"
+    },
+    {
+      "id": "3",
+      "name": "product 1",
+      "price": "100",
+      "discount": "10",
+      "image": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "4",
+      "name": "product 1",
+      "price": "100",
+      "discount": "10",
+      "image": "https://via.placeholder.com/300"
+    },
+    {
+      "id": "5",
+      "name": "product 1",
+      "price": "100",
+      "discount": "10",
+      "image": "https://via.placeholder.com/300"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: var(--sidebar-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  //   padding: 0 25px;
+
+  &__header {
+    display: flex;
+    padding: 25px;
+
+    &__logo {
+      //   background-color: var(--sidebar-bg-invert);
+      //   padding: 5px;
+      //   border-radius: 10px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+
+      img {
+        height: 40px;
+      }
+    }
+
+    &__name {
+      color: var(--text-primary);
+      font-size: 22px;
+      line-height: 40px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 90px);
+    padding: 0 13px;
+
+    &__title {
+      color: var(--text-primary);
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      padding: 0 12px;
+      font-size: 16px;
+    }
+
+    &__footer {
+      padding: 25px 12px;
+
+      &__theme {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // height: 22px;
+
+        span{
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+    padding: 0 12px 2px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--text-secondary);
+    margin-top: 5px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: capitalize;
+
+    &.active,
+    &:hover {
+      background-color: var(--nav-active);
+      color: var(--text-primary);
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+  }
+}
+
+.checkbox {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+
+  &:checked ~ .checkboxLabel {
+    background-color: #32d84c;
+    &:after {
+      left: 15px;
+    }
+  }
+}
+.checkboxContainer{
+    position: relative;
+}
+.checkboxLabel {
+  width: 36px;
+  height: 22px;
+  border-radius: 20px;
+  background-color: #eef0f6;
+  position: relative;
+  display: block;
+  cursor: pointer;
+
+  &:after {
+    content: " ";
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: white;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+  }
+}
