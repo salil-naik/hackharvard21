@@ -1,10 +1,12 @@
 import "./styles/_global.scss";
 import logo from "./assets/logo.svg";
+import raccoon from "./assets/raccoon.png";
 
 // components
 import { Sidebar } from "./components/sidebar/index";
 import { Product } from "./components/product/index";
 import { CartProduct } from "./components/cartProduct/index";
+import { Modal } from "./components/modal/index";
 
 // temporary data
 import * as data from "./data/products.json";
@@ -15,6 +17,7 @@ function App() {
   const [filteredProducts, setFilteredProducts] = useState();
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const filtered = data.default.items.filter(
@@ -23,10 +26,6 @@ function App() {
     setFilteredProducts(filtered);
     console.log(filtered);
   }, [activeItem]);
-
-  // useEffect(() => {
-
-  // }, [cart]);
 
   const discountedPrice = (price, discount) => {
     let newPrice = (price - (price * discount) / 100).toFixed(2);
@@ -43,6 +42,10 @@ function App() {
     const newCart = cart.filter((cartItem) => cartItem.id !== item.id);
     setCart(newCart);
     setTotal(Number(total) - discountedPrice(item.price, item.discount));
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
   };
 
   return (
@@ -83,29 +86,59 @@ function App() {
               </div>
             </div>
             <div className="col-sm-3">
-              <h4 className="cart-title">Cart</h4>
-              {cart.length > 0 ? (
-                cart.map((item) => {
-                  return (
-                    <CartProduct product={item} onRemove={removeProduct} />
-                  );
-                })
-              ) : (
-                <div style={{ color: "white" }}>no products found</div>
-              )}
-
-              {cart.length > 0 && (
-                <div className="cart-total">
-                  <div className="cart-total-item">
-                    <span>Total</span>
-                    <span>${total}</span>
+              <div className="cart-section">
+                <div>
+                  <h4 className="cart-title">Cart</h4>
+                  <div className="cart-section__body">
+                    {cart.length > 0 ? (
+                      cart.map((item) => {
+                        return (
+                          <CartProduct
+                            product={item}
+                            onRemove={removeProduct}
+                          />
+                        );
+                      })
+                    ) : (
+                      <div style={{ color: "white" }}>no products found</div>
+                    )}
                   </div>
                 </div>
-              )}
+
+                <div className="cart-section__footer">
+                  {cart.length > 0 && (
+                    <>
+                      <div className="cart-total">
+                        <div className="cart-total-item">
+                          <span>Total</span>
+                          <span>${total}</span>
+                        </div>
+                      </div>
+                      <button onClick={openModal}>Proceed to Checkout</button>
+                    </>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
+      {isModalOpen && (
+        <Modal onClose={() => setIsModalOpen(false)}>
+          <div className="modal-body">
+            <img src={raccoon} alt="racoon" />
+            <h5>Hi, I'm Rational Raccoon!</h5>
+            <p className="modal-msg">
+              you bought a sweater a month ago, on average - they last for 2
+              years - are you sure you really need this?
+            </p>
+            <div className="modal-footer">
+              <button className="modal-btn">Cancel</button>
+              <button className="modal-btn">Proceed</button>
+            </div>
+          </div>
+        </Modal>  
+      )}
     </div>
   );
 }
