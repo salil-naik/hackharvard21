@@ -1,15 +1,27 @@
 import style from "./sidebar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faCoffee  } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useRef } from "react";
 
 export const Sidebar = (props) => {
+  const checkboxRef = useRef(null);
+
   const changeTheme = (e) => {
     if (e.target.checked) {
       document.body.classList.add("dark-theme");
+      localStorage.setItem("dark-theme", true);
     } else {
       document.body.classList.remove("dark-theme");
+      localStorage.setItem("dark-theme", false);
     }
   };
+
+  useEffect(()=>{
+    if(localStorage.getItem("dark-theme") === "true"){
+      document.body.classList.add("dark-theme");
+      checkboxRef.current.checked = true;
+    }
+  }, []);
 
   return (
     <aside className={style.sidebar}>
@@ -31,6 +43,7 @@ export const Sidebar = (props) => {
                   className={`${style.sidebar__item} ${
                     item == props.activeItem ? style.active : ""
                   }`}
+                  onClick={() => props.setActiveItem(item)}
                 >
                   <FontAwesomeIcon icon={faCoffee} className={style.icon} />
                   {/* <FontAwesomeIcon icon="fa-solid fa-shirt" /> */}
@@ -51,6 +64,7 @@ export const Sidebar = (props) => {
                 id="style-mode"
                 className={style.checkbox}
                 onChange={changeTheme}
+                ref={checkboxRef}
               />
               <label htmlFor="style-mode" className={style.checkboxLabel}>
                 &nbsp;

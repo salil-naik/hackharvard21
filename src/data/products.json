@@ -1,41 +1,236 @@
 {
   "items": [
     {
-      "id": "1",
-      "name": "product 1",
-      "price": "100",
-      "discount": "10",
-      "image": "https://via.placeholder.com/300",
-      "category": "fasion"
+      "id": "423786",
+      "name": "Electric Lighter",
+      "price": "18.99",
+      "discount": "5",
+      "image": "https://m.media-amazon.com/images/I/51xVlrxrRjL._AC_SS450_.jpg",
+      "category": "electronics"
     },
     {
-      "id": "2",
-      "name": "product 1",
-      "price": "100",
+      "id": "901267",
+      "name": "JBL Headphones",
+      "price": "29.95",
       "discount": "10",
-      "image": "https://via.placeholder.com/300",
-      "category": "fasion"
+      "image": "https://m.media-amazon.com/images/I/61q2zYSX7DL._AC_SL1200_.jpg",
+      "category": "electronics"
     },
     {
-      "id": "3",
-      "name": "product 1",
-      "price": "100",
+      "id": "921323",
+      "name": "Oculus Quest 2",
+      "price": "299.00",
       "discount": "10",
-      "image": "https://via.placeholder.com/300"
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473553_rd.jpg;maxHeight=640;maxWidth=550",
+      "category": "electronics"
     },
     {
-      "id": "4",
-      "name": "product 1",
-      "price": "100",
-      "discount": "10",
-      "image": "https://via.placeholder.com/300"
+      "id": "492348",
+      "name": "Minecraft for Nintendo Switch",
+      "price": "29.88",
+      "discount": "5",
+      "image": "https://m.media-amazon.com/images/I/81gJUSx-TjL._SL1500_.jpg",
+      "category": "electronics"
     },
     {
-      "id": "5",
-      "name": "product 1",
-      "price": "100",
+      "id": "461028",
+      "name": "Webcam Light",
+      "price": "15.90",
+      "discount": "12",
+      "image": "https://m.media-amazon.com/images/I/71jG1zInwBL._AC_SL1500_.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": "563023",
+      "name": "Crocs",
+      "price": "54.99",
+      "discount": "15",
+      "image": "https://m.media-amazon.com/images/I/81VzTDK9+KL._AC_UL1500_.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": "512736",
+      "name": "Men's Sweatshirt",
+      "price": "11.00",
+      "discount": "5",
+      "image": "https://m.media-amazon.com/images/I/71kYEgf9JdL._AC_UX569_.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": "143726",
+      "name": "Men's Crewneck",
+      "price": "25.99",
+      "discount": "15",
+      "image": "https://m.media-amazon.com/images/I/91s+J6e79XL._AC_UL1500_.jpg",
+      "category": "fashion"
+    },
+    {
+      "id": "564378",
+      "name": "Women's Sweater",
+      "price": "15.99",
+      "discount": "5",
+      "image": "https://i5.walmartimages.com/asr/831ed790-f212-4492-a438-c3c050e3d4b5_1.3a19b7844e86488b3db9598417615fd4.jpeg",
+      "category": "fashion"
+    },
+    {
+      "id": "739120",
+      "name": "Phone Ring Holder",
+      "price": "7.99",
       "discount": "10",
-      "image": "https://via.placeholder.com/300"
+      "image": "https://m.media-amazon.com/images/I/51x303TIE9L._AC_SL1001_.jpg",
+      "category": "mobile"
+    },
+    {
+      "id": "104567",
+      "name": "Bendy Phone Holder",
+      "price": "17.99",
+      "discount": "17",
+      "image": "https://m.media-amazon.com/images/I/31KU-kRsjiL._AC_.jpg",
+      "category": "mobile"
+    },
+    {
+      "id": "105325",
+      "name": "Popsocket",
+      "price": "9.97",
+      "discount": "8",
+      "image": "https://m.media-amazon.com/images/I/71xNfdTGHKL._AC_SX522_.jpg",
+      "category": "mobile"
+    },
+    {
+      "id": "921463",
+      "name": "Phone Camera Lens",
+      "price": "20.99",
+      "discount": "12",
+      "image": "https://i5.walmartimages.com/asr/fc5e9db9-c15d-41db-a8ab-e7b75d0c95f5.209f4e9bea98e81085f493488008bb92.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "category": "mobile"
+    },
+    {
+      "id": "126785",
+      "name": "Phone Stand",
+      "price": "12.99",
+      "discount": "13",
+      "image": "https://m.media-amazon.com/images/I/61rTIJmEjpL._AC_SY550_.jpg",
+      "category": "mobile"
+    },
+    {
+      "id": "16",
+      "name": "2x Adventure Kings Throne Outdoor Camping Chair",
+      "price": "71.99",
+      "discount": "20",
+      "image": "https://i.ebayimg.com/images/g/zv4AAOSwOx5g~ey6/s-l300.jpg",
+      "category": "home"
+    },
+    {
+      "id": "17",
+      "name": "Artiss DRAWDESK03SI Adjustable Drawing Desk - Black/Grey",
+      "price": "148.90",
+      "discount": "0",
+      "image": "https://i.ebayimg.com/images/g/PJQAAOSwtH9gw5x1/s-l300.jpg",
+      "category": "home"
+    },
+    {
+      "id": "18",
+      "name": "6 Chest of Drawers Cabinet",
+      "price": "207.90",
+      "discount": "15",
+      "image": "https://i.ebayimg.com/images/g/6-UAAOSwqe5hCkPq/s-l640.jpg",
+      "category": "home"
+    },
+    {
+      "id": "19",
+      "name": "Artiss 8 Point Massage Leather Office Chair - Black",
+      "price": "238.70",
+      "discount": "60",
+      "image": "https://i.ebayimg.com/images/g/hREAAOSwMDpeUtoJ/s-l300.jpg",
+      "category": "home"
+    },
+    {
+      "id": "20",
+      "name": "Marlow Bean Bag Chair Cover Home Game Seat Lazy Sofa Cover Large With Foot Stool",
+      "price": "59.99",
+      "discount": "40",
+      "image": "https://i.ebayimg.com/images/g/73YAAOSwgbNhQMgn/s-l640.jpg",
+      "category": "home"
+    },
+    {
+      "id": "21",
+      "name": "Weisshorn SWAG-C-WING-D-DBL-FC 2 Person Tent",
+      "price": "178.95",
+      "discount": "17",
+      "image": "https://i.ebayimg.com/images/g/BGEAAOSwFOZguxTA/s-l640.jpg",
+      "category": "travel"
+    },
+    {
+      "id": "22",
+      "name": "24 X Mini 43pcs Emergency First Aid Kit Medical Travel Hiking Pocket AU",
+      "price": "15.50",
+      "discount": "10",
+      "image": "https://i.ebayimg.com/images/g/4mAAAOSw2YZgCiOx/s-l640.jpg",
+      "category": "travel"
+    },
+    {
+      "id": "23",
+      "name": "Heavy Duty Poly Tarps 200gsm PE Tarpaulin Camping Cover UV Rot Proof",
+      "price": "109.99",
+      "discount": "90",
+      "image": "https://i.ebayimg.com/images/g/6soAAOSwCYRhJzMV/s-l640.jpg",
+      "category": "travel"
+    },
+    {
+      "id": "24",
+      "name": "Victorinox 06203033 Swiss Knife - Red",
+      "price": "29.99",
+      "discount": "0",
+      "image": "https://i.ebayimg.com/images/g/fYsAAOSw2-9gbVGF/s-l640.jpg",
+      "category": "travel"
+    },
+    {
+      "id": "25",
+      "name": "Outdoor Picnic Gas Jet Portable Stove Cooking Hiking Burner",
+      "price": "20.45",
+      "discount": "20",
+      "image": "https://i.ebayimg.com/images/g/cfMAAOSwATVgZXKw/s-l640.jpg",
+      "category": "travel"
+    },
+    {
+      "id": "26",
+      "name": "NEW Futura Stainless Steel Pressure Cooker 5.5L",
+      "price": "179.95",
+      "discount": "30",
+      "image": "https://i.ebayimg.com/images/g/3vMAAOSwf4hgfh3H/s-l1600.jpg",
+      "category": "appliances"
+    },
+    {
+      "id": "27",
+      "name": "Sunbeam GR6450 Big Fill Toastie",
+      "price": "78.00",
+      "discount": "0",
+      "image": "https://i.ebayimg.com/images/g/vskAAOSwCGRcwskq/s-l1600.jpg",
+      "category": "appliances"
+    },
+    {
+      "id": "28",
+      "name": "Kenwood FDM785BA MultiPro Classic Food Processor",
+      "price": "244.00",
+      "discount": "41",
+      "image": "https://i.ebayimg.com/images/g/xlUAAOSwh0NcmHNI/s-l1600.jpg",
+      "category": "appliances"
+    },
+    {
+      "id": "29",
+      "name": "SodaStream Black Electric Sparkling Water Fizzy Drink Maker Soda Stream Power",
+      "price": "229.00",
+      "discount": "8",
+      "image": "https://i.ebayimg.com/images/g/on0AAOSwAzFhPmFE/s-l1600.jpg",
+      "category": "appliances"
+    },
+    {
+      "id": "30",
+      "name": "Healthy Choice 6L Electric Slow/Pressure Cooker 1000W LED Display/Non Stick Pot",
+      "price": "109.00",
+      "discount": "45",
+      "image": "https://i.ebayimg.com/images/g/EQEAAOSwjGVgNzzF/s-l1600.jpg",
+      "category": "appliances"
     }
   ]
 }

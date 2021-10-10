@@ -1,0 +1,52 @@
+.card{
+    height: 80px;
+    width: 100%; 
+    border-radius: 10px; 
+    background-color: var(--sidebar-bg);
+    display: flex;
+    align-items: center;
+    padding:  10px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:hover{
+        button{
+            display: block;
+        }
+    }
+
+    img{
+        width: 60px; 
+        height: 60px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    h3{
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--text-primary);
+        line-height: normal;
+    }
+
+    p{
+        font-size: 13px;
+        font-weight: bold;
+        color: var(--text-primary);
+    }
+
+    button{
+        border: 0; 
+        outline: none;
+        width: 20px; 
+        height:  20px; 
+        background: var(--text-primary);
+        border-radius: 50%;
+        display: none;
+        position: absolute; 
+        right: 10px;
+        top:10px; 
+        cursor: pointer;
+        color: red;
+    }
+}
