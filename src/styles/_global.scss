@@ -133,9 +133,10 @@ a {
 
 
 .modal-footer{
+    text-align: center;
     button{
         outline: none; 
-        width: 100px;
+        width: 200px;
         margin: auto 10px;
         border:0; 
         height: 40px; 
@@ -143,5 +144,17 @@ a {
         border-radius: 5px;
         text-align:center; 
         font-size: 14px;
+        transition: 0.2s ease;
+        cursor: pointer;
+
+        &:hover, &.primary:hover{
+            background-color: black; 
+            color: white;
+        }
+
+        &.primary{
+            background-color: #4C7DFD;
+            color: white;
+        }
     }
 }

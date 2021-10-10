@@ -133,8 +133,8 @@ function App() {
               years - are you sure you really need this?
             </p>
             <div className="modal-footer">
-              <button className="modal-btn">Cancel</button>
-              <button className="modal-btn">Proceed</button>
+              <button className="primary" onClick={()=>setIsModalOpen(false)}>No, I want to save money</button>
+              <button>I don't care, proceed!</button>
             </div>
           </div>
         </Modal>  
